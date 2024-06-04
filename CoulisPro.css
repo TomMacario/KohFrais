@@ -1,0 +1,212 @@
+@font-face {
+	font-family: OpenSans;
+	src: url(Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(Font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff6d5;
+	font-family: OpenSans;
+}
+
+h1, h2, h3, h4 {
+	font-family: Quicksand;
+}
+
+a {
+	text-decoration: none;
+	color: #fff6d5;
+	font-variant: small-caps;
+	transition: color .25s;
+}
+
+/*********************************************************
+*                         HEADER                         *
+*********************************************************/
+
+header {
+	background-color: #492811;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em;
+	z-index: 2;
+}
+
+header img {
+	width: 12.5%;
+}
+
+nav {
+	color: #fff6d5;
+}
+
+nav a {
+	font-size: 1.25em;
+	letter-spacing: 5px;
+	font-weight: normal;
+	transition: .25s;
+}
+
+li ul a{
+	letter-spacing: normal;
+	word-spacing: normal;
+	font-variant: normal;
+	font-size: 1em;
+}
+
+.nav-item {
+	padding-right: 20px;
+}
+
+.nav-item:hover, a:hover {
+	color: #ff5555;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: #5e3315;
+}
+
+.dropdown-menu {
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 10px #492811;
+}
+.dropdown-item:hover {
+	background-color: #5e3315;
+}
+
+div li ul {
+	list-style-type: none;
+}
+
+
+/*********************************************************
+*                    CORPS PRINCIPAL                     *
+*********************************************************/
+
+article  img {
+    width: 35em;
+    height: 20em;
+}
+
+main  p {
+    font-size: 2em;
+	margin-left: 5em;
+}
+
+main section h2 {
+	text-align: center;
+	font-weight: 100;
+	margin: 0 30px;
+	font-size: 4em;
+}
+
+section span {
+	display: inline-block;
+	border-top: 1px solid black;
+	width: 10em;
+}
+
+article > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3em 0;
+}
+
+
+
+
+#fruits_surgeles {
+	background: url(Images/PHOTOS/Fruits_framboises.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+
+
+#bacs_glaces_part {
+	background: url(Images/PHOTOS/Bac_glace1.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+#coupe_indiv_part {
+	background: url(Images/PHOTOS/Coupe_individuelle_2.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+
+#bacs_glaces_pro {
+	background: url(Images/PHOTOS/Bac_glace2.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+
+
+article .d-flex a {
+	height: 20em;
+	width: 20em;
+	padding: 1em;
+	transition: all .25s;
+	display: flex;
+	align-items: flex-end;
+	color: #ff5555;
+	border-radius: 10px;
+}
+
+#buche_de_noel:hover, #vacherin_fete:hover, #vacherin:hover, #buche_glace:hover, #bacs_glaces_pro:hover, #fruits_surgeles:hover, #bacs_glaces_bio_pro:hover {
+	background-size: auto 120%;
+}
+
+#coupe_fete:hover, #bacs_glaces_part:hover, #coupe_indiv_part:hover, #bacs_glaces_bio_part:hover, #coulis_bio_part:hover, #glaces_italiennes:hover, #coupe_indiv_pro:hover, #coulis_bio_pro:hover {
+	background-size: 120% auto;
+}
+
+
+a h1, .carousel-caption {
+	background-color: #fff6d5c9;
+	box-shadow: 0 0 10px 10px #fff6d5c9;
+}
+/*********************************************************
+*                      BAS DE PAGE                       *
+*********************************************************/
+
+footer > div a {
+	position: fixed;
+	bottom: 5em;
+	right: 5em;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+
+strong{
+	font-weight:900 ;
+}
+
+footer div a img {
+	position: relative;
+}
+
+footer {
+	background-color: #492811;
+	position: relative;
+	bottom: 0;
+}
+
+footer h2 {
+	color: #ff5555;
+	line-height: 2em;
+	font-weight: 100;
+}
+
+footer section p {
+	line-height: 10px;
+}

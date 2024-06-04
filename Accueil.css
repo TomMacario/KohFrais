@@ -1,0 +1,360 @@
+@font-face {
+	font-family: OpenSans;
+	src: url(Font/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+	font-family: Quicksand;
+	src: url(Font/Quicksand/Quicksand-VariableFont_wght.ttf);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff6d5;
+	font-family: OpenSans;
+}
+
+h1, h2, h3, h4 {
+	font-family: Quicksand;
+}
+
+a {
+	text-decoration: none;
+	color: #fff6d5;
+	font-variant: small-caps;
+	transition: color .25s;
+}
+
+/*********************************************************
+*                         HEADER                         *
+*********************************************************/
+
+header {
+	background-color: #492811;
+	position: sticky;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1em;
+	z-index: 2;
+}
+
+header img {
+	width: 12.5%;
+}
+
+nav {
+	color: #fff6d5;
+}
+
+nav a {
+	font-size: 1.25em;
+	letter-spacing: 5px;
+	font-weight: normal;
+	transition: .25s;
+}
+
+li ul a{
+	letter-spacing: normal;
+	word-spacing: normal;
+	font-variant: normal;
+	font-size: 1em;
+}
+
+.nav-item {
+	padding-right: 20px;
+}
+
+.nav-item:hover, a:hover {
+	color: #ff5555;
+}
+
+.dropdown:hover .dropdown-menu {
+	display: block;
+	background-color: #5e3315;
+}
+
+.dropdown-menu {
+	border-radius: 10px;
+	border: none;
+	box-shadow: 0 0 10px #492811;
+}
+.dropdown-item:hover {
+	background-color: #5e3315;
+}
+
+div li ul {
+	list-style-type: none;
+}
+
+#truc input {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: -2em;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+#truc span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 7px;
+  background: #fff6d5;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#truc span:nth-last-child(3) {
+  transform-origin: 0% 100%;
+}
+
+#truc input:checked ~ #liste1 span {
+  opacity: 1;
+  transform: rotate(39deg) translate(0px, 0px);
+}
+
+#truc input:checked ~ #liste1 span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#truc input:checked ~ #liste1 span:nth-last-child(1) {
+  transform: rotate(-39deg) translate(0, -1px);
+}
+
+#liste1 {
+	position: relative;
+	top: -.5em;
+    text-align: center;
+    border-radius: 5px;
+    font-family: arial;
+    font-size: 200%;
+    color: white;
+    margin-top: 20px;
+}
+
+.liste {
+    text-align: center;
+    background-color: #5e3315;
+    text-decoration: none;
+    transition:  all .25s;
+    width: 10em;
+	height: 3em;
+}
+
+#menu-deroulant, #menu-deroulant ul {
+    list-style: none;
+}
+
+#menu-deroulant {
+    text-align: center;
+}
+
+#menu-deroulant ul li {
+    display: inherit;
+}
+
+#menu-deroulant a {
+    text-decoration: none;
+    display: block;
+}
+
+#menu-deroulant ul {
+    position: absolute;
+    left: -999em;
+    z-index: 1000;
+}
+
+#menu-deroulant #truc input:checked ~ ul {
+   	left: auto;
+	right: 0;
+	top: 0;
+}
+
+/*********************************************************
+*                    CORPS PRINCIPAL                     *
+*********************************************************/
+
+.carousel .carousel-inner .carousel-item {
+	height:500px;
+}
+
+main section {
+	padding: 1em;
+}
+
+main section h2 {
+	text-align: center;
+	font-weight: 100;
+	margin: 0 30px;
+	font-size: 4em;
+}
+
+strong {
+	font-weight: 900;
+}
+
+section span {
+	display: inline-block;
+	border-top: 1px solid black;
+	width: 10em;
+}
+
+article > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 3em 0;
+}
+
+button {
+	z-index: 1;
+}
+
+#buche_de_noel, #buche_glace {
+	background: url(Images/PHOTOS/Buche_2.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+#coupe_fete {
+	background: url(Images/PHOTOS/coupe_individuelle_Fete.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+#vacherin_fete, #vacherin {
+	background: url(Images/PHOTOS/Vacherin_4.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+#bacs_glaces_part, #bacs_glaces_bio_part {
+	background: url(Images/PHOTOS/Bac_glace1.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+#coupe_indiv_part, #coupe_indiv_pro {
+	background: url(Images/PHOTOS/Coupe_individuelle_2.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+#coulis_bio_part {
+	background: url(Images/PHOTOS/Coulis_caramel.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+#bacs_glaces_pro, #bacs_glaces_bio_pro {
+	background: url(Images/PHOTOS/Bac_glace2.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+#glaces_italiennes {
+	background: url(Images/PHOTOS/Glace_Italienne1.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+#fruits_surgeles {
+	background: url(Images/PHOTOS/Fruits_myrtilles.jpg) no-repeat center;
+	background-size: auto 100%;
+}
+
+#coulis_bio_pro {
+	background: url(Images/PHOTOS/Coulis_Kiwi.jpg) no-repeat center;
+	background-size: 100% auto;
+}
+
+article .d-flex a {
+	height: 20em;
+	width: 20em;
+	padding: 1em;
+	transition: all .25s;
+	display: flex;
+	align-items: flex-end;
+	color: #ff5555;
+	border-radius: 10px;
+}
+
+#buche_de_noel:hover, #vacherin_fete:hover, #vacherin:hover, #buche_glace:hover, #bacs_glaces_pro:hover, #fruits_surgeles:hover, #bacs_glaces_bio_pro:hover {
+	background-size: auto 120%;
+}
+
+#coupe_fete:hover, #bacs_glaces_part:hover, #coupe_indiv_part:hover, #bacs_glaces_bio_part:hover, #coulis_bio_part:hover, #glaces_italiennes:hover, #coupe_indiv_pro:hover, #coulis_bio_pro:hover {
+	background-size: 120% auto;
+}
+
+
+a h1, .carousel-caption {
+	background-color: #fff6d5c9;
+	box-shadow: 0 0 10px 10px #fff6d5c9;
+}
+
+/*********************************************************
+*                      BAS DE PAGE                       *
+*********************************************************/
+
+footer > div a {
+	position: fixed;
+	bottom: 5em;
+	right: 5em;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+}
+
+footer div a img {
+	position: relative;
+}
+
+footer {
+	background-color: #492811;
+	position: relative;
+	bottom: 0;
+}
+
+footer h2 {
+	color: #ff5555;
+	line-height: 2em;
+	font-weight: 100;
+}
+
+footer section p {
+	line-height: 10px;
+}
+
+
+/*********************************************************
+*                     RESPONSIVITE                       *
+*********************************************************/
+.smartphone {
+	display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.smartphone {
+		display: block;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	nav img {
+		min-width: 100px;
+	}
+
+	header img {
+		width: 10em;
+	}
+
+	#carousel {
+		height: 16em;
+	}
+
+	
+}
